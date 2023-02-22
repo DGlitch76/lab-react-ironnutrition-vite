@@ -24,7 +24,7 @@ function AddFoodForm({ addFood }) {
 
         // setNewFood (newFood =>{[...newFood, {name, imageUrl, calories, servings}]} )
         addFood(oldArr => {
-            return [...oldArr, { name, image, calories, servings }]
+            return [ { name, image, calories, servings },...oldArr ]
         })
         setName('')
         setImage('')
